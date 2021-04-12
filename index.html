@@ -8,11 +8,13 @@
     <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
   </head>
   <body>
+    <form>
       <label for="password">mot de passe :</label>
-        <input type="password" name=" password" required>
+        <input type="password" name="password" id="password" required>
       <label for="password">Confirmez:</label>
-        <input type="password" name=" password" required>
-  <button class="btn">vérification</button>
+        <input type="password" name="password2" id="password2" required>
+        <button class="btn" onclick="verificationPassword();">vérification</button>
+    </form>
 
   <script src="script.js" async></script>
   </body>

@@ -1,18 +1,14 @@
+let password = document.getElementById('password');
+let password2 = document.getElementById('password2')
 
-function Password(){
-    let Input1=document.getElementById('Password1').value;
-    let Input2=document.getElementById ('Password2').value
-
-if(Input1===Input2)
-{
-  document.getElementById("Password1").style.border="3px solid green";
-  document.getElementById("Password2").style.border="3px solid green";
-}
+function verificationPassword(){
+if (password.value != password2.value){
+  document.getElementById('password').style.border = "3px solid red";
+  document.getElementById('password2').style.border = "3px solid red";
+  alert('veillez vérifier votre saisie')
+} else {
+  document.getElementById('password').style.border ="3px solid green";
+  document.getElementById('password2').style.border ="3px solid green";
   alert('mots de passe identiques')
-
- else{
-    document.getElementById("Password1").style.border="3px solid red";
-    document.getElementById("Password2").style.border="3px solid red";
 }
-  alert('mots de passe différents')
 }
